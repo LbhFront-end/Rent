@@ -1,0 +1,4347 @@
+@charset "utf-8";
+/* Global style */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+  font-weight: 300;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+  content: '';
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+}
+em,
+strong,
+b {
+  font-weight: 400;
+}
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  color: #777;
+  outline: 0;
+  font-family: "Microsoft YaHei", Arial;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+  vertical-align: baseline;
+  _overflow: visible;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+}
+a {
+  color: #333;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+a:focus {
+  outline: 0;
+  outline-style: none;
+}
+img {
+  overflow: hidden;
+  border: 0 none;
+}
+html {
+  text-align: center;
+  background-color: #f5f5f5!important;
+  overflow: hidden;
+}
+[v-cloak] {
+  display: none!important;
+}
+html,
+body {
+  height: 100%;
+  background: radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -o-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -ms-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -moz-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -webkit-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+}
+.flex-col,
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+}
+.flex-col {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.flex-col.flex-y-center {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-justify-content: center;
+  -ms-flex-pack: center;
+}
+.flex-col.flex-top {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -ms-flex-pack: start;
+}
+.flex-col.flex-bottom {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+.flex-col.flex-x-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+.flex-col.flex-left {
+  align-items: flex-start;
+  -ms-align-content: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -ms-flex-line-pack: start;
+}
+.flex-col.flex-right {
+  align-items: flex-end;
+  -ms-align-content: flex-end;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+  -ms-flex-line-pack: end;
+}
+.flex-row {
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.flex-row.flex-x-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+.flex-row.flex-y-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+.flex-row.flex-left {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -ms-flex-pack: start;
+}
+.flex-row.flex-right {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+.flex-row.flex-bottom {
+  align-items: flex-end;
+  -ms-align-content: flex-end;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+  -ms-flex-line-pack: end;
+}
+.flex-row.flex-top {
+  align-items: flex-start;
+  -ms-align-content: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -ms-flex-line-pack: start;
+}
+.flex-row.flex-space-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-justify-content: space-around;
+  -ms-flex-pack: justify;
+}
+.flex-row.flex-space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+.flex-col.flex-space-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-justify-content: space-around;
+  -ms-flex-pack: justify;
+}
+.flex-col.flex-space-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+/*声明 WebFont*/
+@font-face {
+  font-family: "mainFont";
+  src: url("/static/font/main.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "titleFont";
+  src: url("/static/font/title.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.mint-indicator-text {
+  font-size: 50px !important;
+}
+.toast {
+  width: 7rem;
+}
+.toast span {
+  font-size: 50px !important;
+}
+.successMessage span {
+  font-size: 50px !important;
+}
+.fromBottom {
+  margin-bottom: 157px;
+}
+.white {
+  color: #fff;
+  letter-spacing: 1px;
+}
+.vifrification {
+  background: rgba(0, 0, 0, 0);
+}
+.wrong {
+  color: #fa8787;
+}
+.font {
+  font-family: "mainFont";
+}
+.titleFont {
+  font-family: "titleFont";
+}
+.main {
+  width: 10rem;
+}
+.index {
+  width: 9rem;
+}
+.index .head .logo {
+  margin: 145px 0;
+  width: 169px;
+  height: 153px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -10px -320px;
+}
+.index .head .welcome {
+  width: 9rem;
+  margin-bottom: 150px;
+}
+.index .head .welcome p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 97px;
+}
+.index .login-btn .wechat a {
+  margin-bottom: 40px;
+  width: 9rem;
+  height: 140px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0);
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 60px;
+}
+.index .login-btn .wechat a:hover {
+  background: #fff;
+  color: #00606b;
+}
+.index .login-btn .wechat a:active {
+  background: #fff;
+  color: #00606b;
+}
+.index .login-btn .setAccount a {
+  margin-bottom: 65px;
+  width: 9rem;
+  height: 140px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0);
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 60px;
+}
+.index .login-btn .setAccount a:hover {
+  background: #fff;
+  color: #00606b;
+}
+.index .login-btn .setAccount a:active {
+  background: #fff;
+  color: #00606b;
+}
+.index .login-btn .more a {
+  margin-bottom: 95px;
+  width: 9rem;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+.index .login-btn .more a p {
+  text-align: left;
+}
+.index .protocol p {
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 50px;
+}
+.index .protocol p a {
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.tip-img {
+  width: 74px;
+  height: 50px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -700px -140px;
+}
+.register {
+  width: 9rem;
+}
+.register .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.register .title p {
+  width: 9rem;
+  text-align: left;
+}
+.register .telephone {
+  margin-top: 50px;
+}
+.register .telephone .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.register .telephone .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.register .telephone .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.register .telephone .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.register .telephone .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.register .telephone .content .content-tip .tip-img {
+  width: 74px;
+  height: 50px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -700px -140px;
+}
+.register .code {
+  margin-top: 50px;
+}
+.register .code .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.register .code .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.register .code .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.register .code .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 600px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.register .code .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+  margin-right: 30px;
+}
+.register .code .content .content-tip .tip-text a {
+  font-family: "mainFont";
+  background: #fff;
+  border-radius: 100px;
+  width: 280px;
+  height: 100px;
+  font-size: 45px;
+  color: #00606b;
+}
+.register .code .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.register .password {
+  margin-top: 50px;
+}
+.register .password .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.register .password .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.register .password .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.register .password .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.register .password .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.register .password .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.register .comfirmpassword {
+  margin-top: 50px;
+}
+.register .comfirmpassword .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.register .comfirmpassword .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.register .comfirmpassword .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.register .comfirmpassword .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding-bottom: 45px;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.register .comfirmpassword .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.register .comfirmpassword .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.register .protocol {
+  margin-top: 90px;
+}
+.register .protocol p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 42px;
+  text-align: left;
+}
+.register .next {
+  margin-top: 25px;
+}
+.register .next a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #fff;
+}
+.register .next a img {
+  width: 43px;
+  height: 82px;
+}
+.certification {
+  width: 9rem;
+}
+.certification .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.certification .title p {
+  width: 9rem;
+  text-align: left;
+}
+.certification .realname {
+  margin-top: 50px;
+}
+.certification .realname .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.certification .realname .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.certification .realname .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.certification .realname .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.certification .realname .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.certification .realname .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.certification .idcard {
+  margin-top: 50px;
+}
+.certification .idcard .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.certification .idcard .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.certification .idcard .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.certification .idcard .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 1000px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.certification .idcard .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.certification .idcard .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.certification .next {
+  margin-top: 25px;
+}
+.certification .next a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #fff;
+}
+.certification .next a img {
+  width: 43px;
+  height: 82px;
+}
+.certification .next {
+  margin-top: 25px;
+}
+.certification .next .a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #fff;
+}
+.certification .next .a img {
+  width: 43px;
+  height: 82px;
+}
+.certification .uploadId {
+  width: 9rem;
+  margin-top: 70px;
+}
+.certification .uploadId .positive .picture {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 60px;
+}
+.certification .uploadId .positive .picture img {
+  width: 482px;
+  height: 311px;
+}
+.certification .uploadId .positive .picture input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  border: none;
+  background: #ff9;
+}
+.certification .uploadId .positive .word {
+  margin-top: 20px;
+}
+.certification .uploadId .positive .word p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+.certification .uploadId .negative .picture {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 60px;
+}
+.certification .uploadId .negative .picture input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  border: none;
+  background: #ff9;
+}
+.certification .uploadId .negative .picture img {
+  width: 482px;
+  height: 311px;
+}
+.certification .uploadId .negative .word {
+  margin-top: 20px;
+}
+.certification .uploadId .negative .word p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+.reviewing {
+  width: 9rem;
+}
+.reviewing .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.reviewing .title p {
+  width: 9rem;
+  text-align: left;
+}
+.reviewing .return {
+  margin-top: 50px;
+}
+.reviewing .return .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.reviewing .return .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.login {
+  width: 9rem;
+}
+.login .forgetpassword {
+  position: fixed;
+  top: 70px;
+  right: 70px;
+}
+.login .forgetpassword p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 45px;
+}
+.login .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.login .title p {
+  width: 9rem;
+  text-align: left;
+}
+.login .telephone {
+  margin-top: 50px;
+}
+.login .telephone .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.login .telephone .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.login .telephone .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.login .telephone .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.login .telephone .content .content-main p {
+  width: 148px;
+  height: 74px;
+  margin-right: 20px;
+  border-radius: 80px;
+  background: #fff;
+}
+.login .telephone .content .content-main p span {
+  font-size: 45px;
+  font-family: "mainFont";
+  color: #00606b;
+}
+.login .telephone .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.login .telephone .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.login .password {
+  margin-top: 50px;
+}
+.login .password .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.login .password .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.login .password .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.login .password .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.login .password .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.login .password .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.login .next {
+  margin-top: 25px;
+}
+.login .next .a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #fff;
+}
+.login .next .a .index-enter {
+  width: 43px;
+  height: 82px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -630px -140px;
+}
+.next-enter {
+  width: 43px;
+  height: 82px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -630px -140px;
+}
+.forgetPassword {
+  width: 9rem;
+}
+.forgetPassword .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.forgetPassword .title p {
+  width: 9rem;
+  text-align: left;
+}
+.forgetPassword .telephone {
+  margin-top: 50px;
+}
+.forgetPassword .telephone .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.forgetPassword .telephone .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.forgetPassword .telephone .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.forgetPassword .telephone .content .content-main p {
+  width: 148px;
+  height: 74px;
+  margin-right: 20px;
+  border-radius: 80px;
+  background: #fff;
+}
+.forgetPassword .telephone .content .content-main p span {
+  font-size: 45px;
+  font-family: "mainFont";
+  color: #00606b;
+}
+.forgetPassword .telephone .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.forgetPassword .telephone .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.forgetPassword .telephone .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.forgetPassword .code {
+  margin-top: 50px;
+}
+.forgetPassword .code .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.forgetPassword .code .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.forgetPassword .code .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.forgetPassword .code .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 600px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.forgetPassword .code .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+  margin-right: 30px;
+}
+.forgetPassword .code .content .content-tip .tip-text a {
+  font-family: "mainFont";
+  background: #fff;
+  border-radius: 100px;
+  width: 280px;
+  height: 100px;
+  font-size: 45px;
+  color: #00606b;
+}
+.forgetPassword .code .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.forgetPassword .next {
+  margin-top: 25px;
+}
+.forgetPassword .next a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #fff;
+}
+.forgetPassword .next a img {
+  width: 43px;
+  height: 82px;
+}
+.resetPassword {
+  width: 9rem;
+}
+.resetPassword .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.resetPassword .title p {
+  width: 9rem;
+  text-align: left;
+}
+.resetPassword .telephone {
+  margin-top: 50px;
+}
+.resetPassword .telephone .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.resetPassword .telephone .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.resetPassword .telephone .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.resetPassword .telephone .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.resetPassword .telephone .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.resetPassword .telephone .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.resetPassword .code {
+  margin-top: 50px;
+}
+.resetPassword .code .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.resetPassword .code .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.resetPassword .code .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.resetPassword .code .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 600px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.resetPassword .code .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+  margin-right: 30px;
+}
+.resetPassword .code .content .content-tip .tip-text a {
+  font-family: "mainFont";
+  background: #fff;
+  border-radius: 100px;
+  width: 280px;
+  height: 100px;
+  font-size: 45px;
+  color: #00606b;
+}
+.resetPassword .code .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.resetPassword .password {
+  margin-top: 50px;
+}
+.resetPassword .password .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.resetPassword .password .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.resetPassword .password .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.resetPassword .password .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 45px 0;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.resetPassword .password .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.resetPassword .password .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.resetPassword .comfirmpassword {
+  margin-top: 50px;
+}
+.resetPassword .comfirmpassword .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.resetPassword .comfirmpassword .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.resetPassword .comfirmpassword .content {
+  width: 9rem;
+  border-bottom: 3px solid #fff;
+}
+.resetPassword .comfirmpassword .content .content-main input {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  padding-bottom: 45px;
+  width: 800px;
+  font-size: 80px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.resetPassword .comfirmpassword .content .content-tip .tip-text p {
+  color: #fa8787;
+  font-family: "mainFont";
+  font-size: 35px;
+}
+.resetPassword .comfirmpassword .content .content-tip .tip-img img {
+  width: 74px;
+  height: 50px;
+}
+.resetPassword .protocol {
+  margin-top: 90px;
+}
+.resetPassword .protocol p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 42px;
+  text-align: left;
+}
+.resetPassword .next {
+  margin-top: 25px;
+}
+.resetPassword .next a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #fff;
+}
+.resetPassword .next a img {
+  width: 43px;
+  height: 82px;
+}
+.changePasswordSuccess {
+  width: 9rem;
+}
+.changePasswordSuccess .title {
+  margin-top: 140px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 98px;
+}
+.changePasswordSuccess .title p {
+  width: 9rem;
+  text-align: left;
+}
+.changePasswordSuccess .return {
+  margin-top: 50px;
+}
+.changePasswordSuccess .return .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.changePasswordSuccess .return .smallhead p {
+  width: 9rem;
+  text-align: left;
+}
+.cephalosome {
+  width: 100%;
+  height: 248px;
+  background: radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -o-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -ms-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -moz-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -webkit-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+}
+.cephalosome .search {
+  width: 9rem;
+  height: 149px;
+  background: #2e838c;
+  border-radius: 20px;
+}
+.cephalosome .search .icon-search {
+  width: 82px;
+  height: 75px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -300px -10px;
+}
+.cephalosome .search .btn-search input {
+  background: rgba(0, 0, 0, 0);
+  text-indent: 20px;
+  width: 7.5rem;
+  border: none;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.background-icons {
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+}
+.footer {
+  width: 100%;
+  height: 157px;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+.footer .rent a .rent-icon {
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -10px -10px;
+  width: 60px;
+  height: 60px;
+}
+.footer .rent a p {
+  font-size: 28px;
+  font-family: "mainFont";
+  color: #3a3a3a;
+}
+.footer .rent a.active .rent-icon {
+  background-position: -10px -80px;
+}
+.footer .rent a.active p {
+  color: #005e69;
+}
+.footer .clean a .clean-icon {
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -80px -10px;
+  width: 62px;
+  height: 60px;
+}
+.footer .clean a p {
+  width: 60px;
+  font-size: 28px;
+  font-family: "mainFont";
+  color: #3a3a3a;
+}
+.footer .clean a.active .clean-icon {
+  background-position: -80px -80px;
+}
+.footer .clean a.active p {
+  color: #005e69;
+}
+.footer .openDoor {
+  margin-bottom: 90px;
+}
+.footer .openDoor a .open-outside {
+  width: 170px;
+  height: 170px;
+  border-radius: 170px;
+  background: #fff;
+}
+.footer .openDoor a .open-outside .open-icon {
+  border-radius: 150px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -10px -140px;
+  width: 150px;
+  height: 150px;
+}
+.footer .openDoor a p {
+  font-size: 28px;
+  font-family: "mainFont";
+  color: #3a3a3a;
+}
+.footer .person a .person-icon {
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -160px -10px;
+  width: 52.5px;
+  height: 60px;
+}
+.footer .person a p {
+  font-size: 28px;
+  font-family: "mainFont";
+  color: #3a3a3a;
+}
+.footer .person a.active .person-icon {
+  background-position: -160px -80px;
+}
+.footer .person a.active p {
+  color: #005e69;
+}
+.footer .guide a .guide-icon {
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -240px -10px;
+  width: 50px;
+  height: 60px;
+}
+.footer .guide a p {
+  font-size: 28px;
+  font-family: "mainFont";
+  color: #3a3a3a;
+}
+.footer .guide a.active .guide-icon {
+  background-position: -240px -80px;
+}
+.footer .guide a.active p {
+  color: #005e69;
+}
+.afterLoginIndex {
+  background: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  height: 2000px;
+  margin-bottom: 157px;
+}
+.afterLoginIndex .alloutside {
+  width: 10rem;
+  background: #fff;
+}
+.afterLoginIndex .alloutside .afterLoginIndex-title {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  width: 9rem;
+  background: #fff;
+}
+.afterLoginIndex .alloutside .afterLoginIndex-title .top p {
+  font-size: 80px;
+  font-family: "mainFont";
+  color: #271404;
+}
+.afterLoginIndex .alloutside .afterLoginIndex-title .top .index-tag-icon {
+  margin-left: 10px;
+  width: 50px;
+  height: 51px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -400px -10px;
+}
+.afterLoginIndex .alloutside .afterLoginIndex-title .bom p {
+  font-size: 40px;
+  font-family: "mainFont";
+  color: #271404;
+}
+.afterLoginIndex .banner {
+  width: 10rem;
+  height: 580px;
+}
+.afterLoginIndex .banner .mint-swipe-items-wrap {
+  width: 10rem;
+  height: 580px;
+}
+.afterLoginIndex .banner .mint-swipe-items-wrap .bannerItem {
+  width: 10rem;
+  height: 580px;
+}
+.afterLoginIndex .banner .mint-swipe-items-wrap .bannerItem img {
+  width: 10rem;
+  height: 580px;
+}
+.afterLoginIndex .communityService {
+  height: 360px;
+  width: 10rem;
+  background: #fff;
+}
+.afterLoginIndex .communityService p {
+  margin-left: 0.5rem;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #383838;
+}
+.afterLoginIndex .communityService .communityService-item {
+  width: 9rem;
+  margin-top: 30px;
+  margin-left: 0.5rem;
+}
+.afterLoginIndex .communityService .communityService-item .intelligentLock {
+  width: 192px;
+  height: 192px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -10px -600px;
+}
+.afterLoginIndex .communityService .communityService-item .intelligentLock p {
+  margin: 0;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+  text-align: center;
+}
+.afterLoginIndex .communityService .communityService-item .online-pay {
+  width: 192px;
+  height: 192px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  margin-left: 0.5rem;
+  background-position: -10px -600px;
+}
+.afterLoginIndex .communityService .communityService-item .online-pay p {
+  margin: 0;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+  text-align: center;
+}
+.afterLoginIndex .rentReminding {
+  height: 160px;
+  width: 100%;
+  background: radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -o-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -ms-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -moz-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -webkit-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+}
+.afterLoginIndex .rentReminding .mint-swipe {
+  height: 160px;
+  width: 10rem;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap {
+  width: 10rem;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item {
+  height: 160px;
+  width: 10rem;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .textDate {
+  width: 7rem;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .textDate .text {
+  width: 7rem;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .textDate .text p {
+  font-size: 38px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  text-align: left;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .textDate .date p {
+  font-size: 38px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .textDate .date p span {
+  color: #ffd0ab;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .Money {
+  height: 160px;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .Money .money {
+  width: 230px;
+  height: 70px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .Money .money a p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+.afterLoginIndex .rentReminding .mint-swipe .mint-swipe-items-wrap .mint-swipe-item .Money .money a p span {
+  font-size: 45px;
+  color: #ffd0ab;
+  font-weight: 700;
+  font-family: "mainFont";
+}
+.afterLoginIndex .room-outside {
+  width: 10rem;
+  background: #fff;
+}
+.afterLoginIndex .room-outside .room-list .room-item {
+  margin-bottom: 140px;
+}
+.afterLoginIndex .room-outside .room-list .room-item .item-img img {
+  width: 9rem;
+  height: 731px;
+}
+.afterLoginIndex .room-outside .room-list .room-item .item-content {
+  width: 9rem;
+  margin-top: 70px;
+}
+.afterLoginIndex .room-outside .room-list .room-item .item-content p {
+  font-size: 45px;
+  font-family: "mainFont";
+}
+.afterLoginIndex .room-outside .room-list .room-item .item-content p:last-child {
+  font-size: 40px;
+  width: 376px;
+  height: 94px;
+  background: #005e69;
+  border-radius: 50px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.afterLoginIndex .room-outside .room-list .room-item .item-content p:last-child span {
+  margin-left: 4px;
+  font-weight: 700;
+}
+.border {
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail {
+  width: 100%;
+  height: 2000px;
+}
+.roomDetail .pictureBtns {
+  position: relative;
+}
+.roomDetail .pictureBtns .picture {
+  width: 10rem;
+  height: 823px;
+}
+.roomDetail .pictureBtns .picture .mint-swipe-items-wrap {
+  width: 10rem;
+  height: 823px;
+}
+.roomDetail .pictureBtns .picture .mint-swipe-items-wrap .pictureItem {
+  width: 10rem;
+  height: 823px;
+}
+.roomDetail .pictureBtns .picture .mint-swipe-items-wrap .pictureItem img {
+  height: 823px;
+  width: 10rem;
+}
+.roomDetail .pictureBtns .btns {
+  width: 9rem;
+  position: absolute;
+  top: 100px;
+}
+.roomDetail .pictureBtns .btns .back .room-back {
+  width: 29px;
+  height: 48px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -480px -10px;
+}
+.roomDetail .pictureBtns .btns .sharelike .share {
+  margin-right: 100px;
+}
+.roomDetail .pictureBtns .btns .sharelike .share .room-share {
+  width: 56px;
+  height: 55px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -520px -10px;
+}
+.roomDetail .pictureBtns .btns .sharelike .like .room-like {
+  width: 52px;
+  height: 42px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -580px -10px;
+}
+.roomDetail .information {
+  width: 9rem;
+  margin: 80px 0;
+}
+.roomDetail .information .title {
+  padding-bottom: 80px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .title p:nth-child(1) {
+  font-family: "mainFont";
+  font-size: 90px;
+  color: #484848;
+  font-weight: 700;
+}
+.roomDetail .information .title p:nth-child(2) {
+  margin-top: 50px;
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .title p:nth-child(2) span {
+  color: #00a699;
+}
+.roomDetail .information .details {
+  padding: 80px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .details .rent .room-rent {
+  width: 69px;
+  height: 69px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -630px -10px;
+}
+.roomDetail .information .details .rent p {
+  margin-top: 30px;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #484848;
+}
+.roomDetail .information .details .room .room-rooms {
+  width: 72px;
+  height: 67px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -700px -10px;
+}
+.roomDetail .information .details .room p {
+  margin-top: 30px;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #484848;
+}
+.roomDetail .information .details .bed .room-bed {
+  width: 72px;
+  height: 72px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -780px -10px;
+}
+.roomDetail .information .details .bed p {
+  margin-top: 30px;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #484848;
+}
+.roomDetail .information .details .shower .room-shower {
+  width: 45px;
+  height: 76px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -860px -10px;
+}
+.roomDetail .information .details .shower p {
+  margin-top: 30px;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #484848;
+}
+.roomDetail .information .houseSourceCode {
+  padding: 65px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .houseSourceCode p {
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #484848;
+}
+.roomDetail .information .areaHIgh {
+  padding: 65px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .areaHIgh .area p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .areaHIgh .high {
+  width: 3.5rem;
+}
+.roomDetail .information .areaHIgh .high p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .directionRenovation {
+  padding: 65px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .directionRenovation .direction p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .directionRenovation .renovation {
+  width: 3.5rem;
+}
+.roomDetail .information .directionRenovation .renovation p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .roomNumberPaid {
+  padding: 65px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .roomNumberPaid .roomNumber p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .roomNumberPaid .paid {
+  width: 3.5rem;
+}
+.roomDetail .information .roomNumberPaid .paid p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .checkleaseTerm {
+  padding: 65px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.roomDetail .information .checkleaseTerm .check p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .checkleaseTerm .leaseTerm {
+  width: 3.5rem;
+}
+.roomDetail .information .checkleaseTerm .leaseTerm p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .fixedCharges {
+  width: 9rem;
+}
+.roomDetail .information .fixedCharges .content {
+  width: 9rem;
+}
+.roomDetail .information .fixedCharges .title {
+  border: none;
+}
+.roomDetail .information .fixedCharges .title p {
+  margin-top: 130px;
+  font-weight: 300;
+  font-size: 55px;
+  color: #484848;
+  font-family: "mainFont";
+}
+.roomDetail .information .fixedCharges .chargeIcons {
+  margin-left: 20px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .water {
+  width: 242px;
+  height: 224px;
+  border: 3px solid #484848;
+  border-radius: 10px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .water .water-icon {
+  margin-bottom: 20px;
+  width: 45px;
+  height: 76px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -940px -10px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .water p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .fixedCharges .chargeIcons .electricity {
+  margin-left: 40px;
+  width: 242px;
+  height: 224px;
+  border: 1px solid #484848;
+  border-radius: 10px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .electricity .electricity-icon {
+  margin-bottom: 20px;
+  width: 40px;
+  height: 77px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -1000px -10px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .electricity p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .information .fixedCharges .chargeIcons .management {
+  margin-left: 40px;
+  width: 242px;
+  height: 224px;
+  border: 1px solid #484848;
+  border-radius: 10px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .management .management-icon {
+  margin-bottom: 20px;
+  width: 57px;
+  height: 65px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -1050px -10px;
+}
+.roomDetail .information .fixedCharges .chargeIcons .management p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.roomDetail .consultationOrderSign .consultation a {
+  width: 360px;
+  height: 170px;
+  border: 1px solid #fff;
+  background: #6e7778;
+}
+.roomDetail .consultationOrderSign .consultation a p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+.roomDetail .consultationOrderSign .order a {
+  width: 360px;
+  height: 170px;
+  border: 1px solid #fff;
+  background: #6e7778;
+}
+.roomDetail .consultationOrderSign .order a p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+.roomDetail .consultationOrderSign .sign a {
+  width: 860px;
+  height: 170px;
+  border: 1px solid #fff;
+  background: #005e69;
+}
+.roomDetail .consultationOrderSign .sign a p {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+.signUp {
+  width: 9rem;
+}
+.signUp .title {
+  margin-top: 140px;
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 98px;
+}
+.signUp .title p {
+  width: 9rem;
+  text-align: left;
+}
+.signUp .text {
+  width: 9rem;
+  margin-top: 150px;
+}
+.signUp .text p {
+  font-family: "mainFont";
+  line-height: 80px;
+  font-size: 40px;
+  color: #484848;
+  text-align: left;
+}
+.signUp .text p table {
+  width: 9rem;
+}
+.signUp .text p table tr {
+  text-align: center;
+}
+.signUp .text p table tr td {
+  text-align: center;
+  border: 1px solid #eee;
+}
+.signUp .ellipsis {
+  width: 9rem;
+  margin-right: 0.5rem;
+}
+.signUp .ellipsis .rr {
+  width: 29px;
+  height: 48px;
+}
+.signUp .ellipsis .ll {
+  width: 48px;
+  height: 29px;
+}
+.signUp .contract {
+  width: 9rem;
+  margin-top: 120px;
+}
+.signUp .contract input {
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  border: 2px solid #037880;
+}
+.signUp .contract input:checked {
+  background-color: #037880;
+  background-image: url("../../static/img/signUp-gou.png");
+  background-size: 100% 100%;
+}
+.signUp .contract label {
+  margin-left: 20px;
+  font-family: "mainFont";
+  font-size: 35px;
+  color: #484848;
+}
+.signUp .next {
+  width: 9rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.signUp .next a {
+  width: 142px;
+  height: 142px;
+  border-radius: 142px;
+  background: #037880;
+}
+.signUp .next a img {
+  width: 43px;
+  height: 82px;
+}
+.costList {
+  width: 9rem;
+  margin-bottom: 6.5rem;
+}
+.costList .title {
+  margin-top: 140px;
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 98px;
+}
+.costList .title p {
+  width: 9rem;
+  text-align: left;
+}
+.costList .rentDepositNextMonth {
+  width: 9rem;
+}
+.costList .rentDepositNextMonth .rentDeposit {
+  margin-top: 150px;
+  padding-bottom: 70px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.costList .rentDepositNextMonth .rentDeposit p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.costList .rentDepositNextMonth .NextMonth {
+  padding: 70px 0;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.costList .rentDepositNextMonth .NextMonth p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.costList .count {
+  width: 9rem;
+  margin-top: 50px;
+}
+.costList .count p:nth-child(1) {
+  color: #484848;
+  font-weight: 700;
+  font-size: 45px;
+  margin-right: 20px;
+}
+.costList .count p:nth-child(2) {
+  color: #484848;
+  font-weight: 700;
+  font-size: 90px;
+}
+.costList .ConfirePayment {
+  width: 9rem;
+  margin-top: 90px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.costList .ConfirePayment p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.orderShowings {
+  width: 9rem;
+  margin-bottom: 350px;
+}
+.orderShowings .title {
+  margin-top: 140px;
+  margin-bottom: 120px;
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 98px;
+}
+.orderShowings .title p:nth-child(2) {
+  margin-top: 40px;
+  width: 9rem;
+  text-align: left;
+  font-family: "mainFont";
+  font-size: 55px;
+}
+.orderShowings .name {
+  width: 9rem;
+}
+.orderShowings .name p {
+  font-family: "mainFont";
+  font-size: 55px;
+}
+.orderShowings .name input {
+  margin-top: 60px;
+  border: none;
+  padding-bottom: 60px;
+  font-family: "mainFont";
+  font-size: 55px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.orderShowings .phone {
+  width: 9rem;
+  margin-top: 65px;
+}
+.orderShowings .phone p {
+  font-family: "mainFont";
+  font-size: 55px;
+}
+.orderShowings .phone input {
+  margin-top: 60px;
+  border: none;
+  padding-bottom: 60px;
+  font-family: "mainFont";
+  font-size: 55px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.orderShowings .time {
+  width: 9rem;
+  margin-top: 65px;
+}
+.orderShowings .time p {
+  font-family: "mainFont";
+  font-size: 55px;
+}
+.orderShowings .time .timeInputs {
+  width: 9rem;
+}
+.orderShowings .time .timeInputs input {
+  margin-top: 60px;
+  border: none;
+  padding-bottom: 60px;
+  font-family: "mainFont";
+  font-size: 55px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.orderShowings .ConfireOrder {
+  width: 9rem;
+  margin-top: 90px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.orderShowings .ConfireOrder p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.orderSuccess {
+  width: 9rem;
+  margin-bottom: 1650px;
+}
+.orderSuccess .title {
+  width: 9rem;
+  margin-top: 140px;
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 98px;
+}
+.orderSuccess .title p {
+  width: 9rem;
+  text-align: left;
+}
+.orderSuccess .return {
+  margin-top: 50px;
+}
+.orderSuccess .return .smallhead {
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+.orderSuccess .return .smallhead p {
+  width: 9rem;
+  text-align: left;
+  color: #484848;
+}
+.pointer-right {
+  width: 28px;
+  height: 48px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -580px -140px;
+}
+.personIndex {
+  width: 9rem;
+  margin-bottom: 410px;
+}
+.personIndex .personNameHeadImg {
+  margin-top: 140px;
+  width: 9rem;
+}
+.personIndex .personNameHeadImg .personName p {
+  text-align: left;
+  color: #484848;
+}
+.personIndex .personNameHeadImg .personName p:nth-child(1) {
+  font-size: 95px;
+  font-family: "titleFont";
+}
+.personIndex .personNameHeadImg .personName p:nth-child(2) {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.personIndex .personNameHeadImg .headImg {
+  position: relative;
+  width: 195px;
+  height: 195px;
+  overflow: hidden;
+}
+.personIndex .personNameHeadImg .headImg img {
+  width: 195px;
+  height: 195px;
+  border-radius: 195px;
+}
+.personIndex .personNameHeadImg .headImg input {
+  position: absolute;
+  width: 195px;
+  height: 195px;
+  border-radius: 195px;
+  border: none;
+  opacity: 0;
+  background: rgba(255, 0, 0, 0.1);
+}
+.personIndex .paymentRecord {
+  height: 190px;
+  margin-top: 150px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.personIndex .paymentRecord a {
+  width: 9rem;
+  height: 200px;
+}
+.personIndex .paymentRecord a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.personIndex .paymentRecord a .person-right {
+  width: 28px;
+  height: 48px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -580px -140px;
+}
+.personIndex .cleanList {
+  height: 190px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.personIndex .cleanList a {
+  width: 9rem;
+  height: 200px;
+}
+.personIndex .cleanList a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.personIndex .cleanList a .person-cleanList {
+  width: 71px;
+  height: 71px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -160px -140px;
+}
+.personIndex .myMessage {
+  height: 190px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.personIndex .myMessage a {
+  width: 9rem;
+  height: 200px;
+}
+.personIndex .myMessage a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.personIndex .myMessage a .person-message {
+  width: 71px;
+  height: 71px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -240px -140px;
+}
+.personIndex .personCertification {
+  height: 190px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.personIndex .personCertification a {
+  width: 9rem;
+  height: 200px;
+}
+.personIndex .personCertification a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.personIndex .personCertification a .person-certification {
+  width: 68px;
+  height: 68px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -400px -140px;
+}
+.personIndex .setting {
+  height: 190px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.personIndex .setting a {
+  width: 9rem;
+  height: 200px;
+}
+.personIndex .setting a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.personIndex .setting a .person-setting {
+  width: 68px;
+  height: 68px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -480px -140px;
+}
+.paymentRecord2 {
+  height: 2000px;
+  margin-top: 140px;
+  width: 9rem;
+}
+.paymentRecord2 .paymentRecordItem {
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+.paymentRecord2 .paymentRecordItem .paymentRecordInformation {
+  width: 9rem;
+}
+.paymentRecord2 .paymentRecordItem .paymentRecordInformation .rentAbout {
+  width: 9rem;
+}
+.paymentRecord2 .paymentRecordItem .paymentRecordInformation .rentAbout p {
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #151515;
+}
+.paymentRecord2 .paymentRecordItem .paymentRecordInformation .rentAbout p span {
+  color: #858585;
+}
+.paymentRecord2 .paymentRecordItem .paymentRecordInformation .rentAbout p:nth-child(2) {
+  margin-top: 50px;
+}
+.paymentRecord2 .paymentRecordItem .paymentRecordInformation .house p {
+  width: 2rem;
+  font-family: "mainFont";
+  font-size: 70px;
+  color: #484848;
+}
+.paymentRecord2 .paymentRecordItem .payOrNot {
+  width: 9rem;
+  margin-top: 60px;
+}
+.paymentRecord2 .paymentRecordItem .payOrNot .payBtn .pay-n {
+  width: 295px;
+  height: 95px;
+  background: #ff4f4f;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.paymentRecord2 .paymentRecordItem .payOrNot .payBtn .pay-y {
+  width: 295px;
+  height: 95px;
+  background: #909090;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.paymentRecord2 .paymentRecordItem .payOrNot .payMoney p {
+  font-size: 55px;
+  color: #484848;
+}
+.paymentRecord2 .paymentRecordItem .payOrNot .payMoney p span {
+  color: #ff4f4f;
+}
+.paymentRecordPayY {
+  width: 9rem;
+  margin-top: 140px;
+  margin-bottom: 400px;
+}
+.paymentRecordPayY .title {
+  width: 9rem;
+  margin-bottom: 160px;
+}
+.paymentRecordPayY .title p:nth-child(1) {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #484848;
+}
+.paymentRecordPayY .title p:nth-child(2) {
+  margin-top: 40px;
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .nextMRent {
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayY .nextMRent p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .currentMElectricityFees {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayY .currentMElectricityFees .Fees {
+  width: 9rem;
+}
+.paymentRecordPayY .currentMElectricityFees .Fees p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .currentMElectricityFees .degrees {
+  margin-top: 40px;
+}
+.paymentRecordPayY .currentMElectricityFees .degrees p {
+  font-size: 45px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .currentMElectricityFees .degrees p span {
+  color: #ff4f4f;
+}
+.paymentRecordPayY .currentMWaterFees {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayY .currentMWaterFees .Fees {
+  width: 9rem;
+}
+.paymentRecordPayY .currentMWaterFees .Fees p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .currentMWaterFees .degrees {
+  margin-top: 40px;
+}
+.paymentRecordPayY .currentMWaterFees .degrees p {
+  font-size: 45px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .currentMWaterFees .degrees p span {
+  color: #ff4f4f;
+}
+.paymentRecordPayY .currentManagementExpense {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayY .currentManagementExpense p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayY .count {
+  width: 9rem;
+  margin-top: 50px;
+}
+.paymentRecordPayY .count p:nth-child(1) {
+  color: #484848;
+  font-weight: 700;
+  font-size: 45px;
+  margin-right: 20px;
+}
+.paymentRecordPayY .count p:nth-child(2) {
+  color: #484848;
+  font-weight: 700;
+  font-size: 90px;
+}
+.paymentRecordPayY .ConfirePayment {
+  width: 9rem;
+  margin-top: 90px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.paymentRecordPayY .ConfirePayment p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.paymentRecordPayN {
+  width: 9rem;
+  margin-top: 140px;
+  margin-bottom: 200px;
+}
+.paymentRecordPayN .title {
+  width: 9rem;
+  margin-bottom: 160px;
+}
+.paymentRecordPayN .title p:nth-child(1) {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #484848;
+}
+.paymentRecordPayN .title p:nth-child(2) {
+  margin-top: 40px;
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .nextMRent {
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayN .nextMRent p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .currentMElectricityFees {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayN .currentMElectricityFees .Fees {
+  width: 9rem;
+}
+.paymentRecordPayN .currentMElectricityFees .Fees p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .currentMElectricityFees .degrees {
+  margin-top: 40px;
+}
+.paymentRecordPayN .currentMElectricityFees .degrees p {
+  font-size: 45px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .currentMElectricityFees .degrees p span {
+  color: #ff4f4f;
+}
+.paymentRecordPayN .currentMWaterFees {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayN .currentMWaterFees .Fees {
+  width: 9rem;
+}
+.paymentRecordPayN .currentMWaterFees .Fees p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .currentMWaterFees .degrees {
+  margin-top: 40px;
+}
+.paymentRecordPayN .currentMWaterFees .degrees p {
+  font-size: 45px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .currentMWaterFees .degrees p span {
+  color: #ff4f4f;
+}
+.paymentRecordPayN .currentManagementExpense {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.paymentRecordPayN .currentManagementExpense p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.paymentRecordPayN .count {
+  width: 9rem;
+  margin-top: 50px;
+}
+.paymentRecordPayN .count p:nth-child(1) {
+  color: #484848;
+  font-weight: 700;
+  font-size: 45px;
+  margin-right: 20px;
+}
+.paymentRecordPayN .count p:nth-child(2) {
+  color: #484848;
+  font-weight: 700;
+  font-size: 90px;
+}
+.paymentRecordPayN .ConfirePayment {
+  width: 9rem;
+  margin-top: 90px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.paymentRecordPayN .ConfirePayment p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.cleanListOutside {
+  width: 10rem;
+  height: 100%;
+  height: 2000px;
+}
+.cleanListOutside .cleanList2 {
+  width: 9rem;
+  margin-bottom: 410px;
+}
+.cleanListOutside .cleanList2 .cleanListHead {
+  margin-top: 140px;
+  width: 9rem;
+}
+.cleanListOutside .cleanList2 .cleanListHead .title p {
+  text-align: left;
+  color: #484848;
+}
+.cleanListOutside .cleanList2 .cleanListHead .title p:nth-child(1) {
+  font-size: 95px;
+  font-family: "titleFont";
+}
+.cleanListOutside .cleanList2 .cleanListHead .title p:nth-child(2) {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.cleanListOutside .cleanList2 .cleanListHead .cleanAddBtn a {
+  width: 3rem;
+  color: #006b78;
+  font-size: 70px;
+  font-family: "mainFont";
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text {
+  padding-bottom: 90px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text .cleanPersonTime p {
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #151515;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text .cleanPersonTime p span {
+  color: #858585;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text .cleanPersonTime p:nth-child(2) {
+  margin-top: 40px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text .cleanHouseState {
+  width: 3rem;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text .cleanHouseState p:nth-child(1) {
+  font-family: "mainFont";
+  font-size: 70px;
+  color: #484848;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-text .cleanHouseState p:nth-child(2) {
+  margin-top: 100px;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #ff4f4f;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns {
+  width: 9rem;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns .cleanN {
+  width: 9rem;
+  margin-top: 50px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns .cleanN .notice {
+  margin-right: 30px;
+  width: 295px;
+  height: 95px;
+  background: #ff4f4f;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns .cleanN .cancel {
+  width: 295px;
+  height: 95px;
+  background: #909090;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns .cleanY {
+  width: 9rem;
+  margin-top: 50px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns .cleanY .comment {
+  margin-right: 30px;
+  width: 295px;
+  height: 95px;
+  background: #ff4f4f;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cleanListOutside .cleanList2 .cleanListDetails .cleanListDetailsItem .cleanListDetailsItem-Btns .cleanY .delete {
+  width: 295px;
+  height: 95px;
+  background: #909090;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cleanComment {
+  margin-top: 140px;
+  width: 9rem;
+}
+.cleanComment .title {
+  width: 9rem;
+}
+.cleanComment .title p {
+  text-align: left;
+  color: #484848;
+}
+.cleanComment .title p:nth-child(1) {
+  font-size: 95px;
+  font-family: "titleFont";
+}
+.cleanComment .title p:nth-child(2) {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.cleanComment .HouseNumber {
+  margin-top: 150px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.cleanComment .HouseNumber p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .cleanTime {
+  margin-top: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 60px;
+}
+.cleanComment .cleanTime .cleanTime-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .cleanTime .cleanTime-data p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .cleanTime .cleanTime-data p:nth-child(2) {
+  margin-left: 40px;
+}
+.cleanComment .orderTime {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanComment .orderTime .orderTime-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .orderTime .orderTime-data p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .orderTime .orderTime-data p:nth-child(2) {
+  margin-left: 40px;
+}
+.cleanComment .serverItem {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanComment .serverItem .serverItem-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .serverItem .serverItem-btn p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .serverItem .serverItem-btn .rr {
+  width: 29px;
+  height: 48px;
+}
+.cleanComment .serverItem .serverItem-btn .ll {
+  width: 48px;
+  height: 29px;
+}
+.cleanComment .cleanComments {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanComment .cleanComments .cleanComments-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanComment .cleanComments .cleanComments-btn textarea {
+  width: 9rem;
+  border: none;
+}
+.cleanComment .submitComments {
+  width: 9rem;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.cleanComment .submitComments p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.cleanServerAdd {
+  margin-top: 140px;
+  width: 9rem;
+  margin-bottom: 180px;
+}
+.cleanServerAdd .title {
+  width: 9rem;
+}
+.cleanServerAdd .title p {
+  text-align: left;
+  color: #484848;
+}
+.cleanServerAdd .title p:nth-child(1) {
+  font-size: 95px;
+  font-family: "titleFont";
+}
+.cleanServerAdd .title p:nth-child(2) {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.cleanServerAdd .HouseNumber {
+  margin-top: 150px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.cleanServerAdd .HouseNumber p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanServerAdd .HouseNumber select {
+  background: rgba(0, 0, 0, 0);
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+  border: none;
+}
+.cleanServerAdd .HouseNumber select option {
+  text-align: right;
+}
+.cleanServerAdd .HouseNumber2 {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.cleanServerAdd .HouseNumber2 p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanServerAdd .HouseNumber2 select {
+  background: rgba(0, 0, 0, 0);
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+  border: none;
+}
+.cleanServerAdd .HouseNumber2 select option {
+  text-align: right;
+}
+.cleanServerAdd .chooseCleanTime {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanServerAdd .chooseCleanTime .chooseCleanTime-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanServerAdd .chooseCleanTime .chooseCleanTime-btn {
+  width: 9rem;
+}
+.cleanServerAdd .chooseCleanTime .chooseCleanTime-btn input {
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+.cleanServerAdd .chooseCleanType {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanServerAdd .chooseCleanType .chooseCleanType-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanServerAdd .chooseCleanType .chooseCleanType-btn {
+  width: 9rem;
+}
+.cleanServerAdd .chooseCleanType .chooseCleanType-btn select {
+  background: rgba(0, 0, 0, 0);
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+  border: none;
+}
+.cleanServerAdd .chooseCleanType .chooseCleanType-btn select option {
+  text-align: right;
+}
+.cleanServerAdd .cleanDescription {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanServerAdd .cleanDescription .cleanDescription-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanServerAdd .cleanDescription .cleanDescription-textarea {
+  width: 9rem;
+}
+.cleanServerAdd .cleanDescription .cleanDescription-textarea textarea {
+  background: rgba(0, 0, 0, 0);
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+  border: none;
+}
+.cleanServerAdd .cleanPriceList {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table table {
+  font-family: "mainFont";
+  margin-top: 60px;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table table tr td {
+  width: 280px;
+  height: 80px;
+  border: 1px solid #ebebeb;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table table tr:nth-child(1) {
+  background: #19c29f;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table table tr:nth-child(1) td {
+  color: #fff;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table input {
+  margin-top: 40px;
+  width: 355px;
+  height: 115px;
+  border-radius: 115px;
+  background-color: #fff;
+  background-image: url("../../static/img/clean-UnactiveButton.png");
+  background-repeat: no-repeat;
+  background-position: 300px 50px;
+  background-size: 34px 44px;
+  border: 2px solid #484848;
+  color: #484848;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table input:checked {
+  margin-top: 40px;
+  width: 355px;
+  height: 115px;
+  border-radius: 115px;
+  background-color: #006b78;
+  background-image: url("../../static/img/clean-ActiveButton.png");
+  background-repeat: no-repeat;
+  background-position: 300px 50px;
+  background-size: 34px 44px;
+  border: 1px solid #484848;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cleanServerAdd .cleanPriceList .cleanPriceList-table span {
+  top: 70px;
+  color: #484848;
+}
+.cleanServerAdd .submitClean {
+  width: 9rem;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.cleanServerAdd .submitClean p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.setting {
+  width: 9rem;
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+.setting .title {
+  width: 9rem;
+}
+.setting .title p {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #484848;
+}
+.setting .changePhoneNumber {
+  height: 190px;
+  margin-top: 120px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.setting .changePhoneNumber a {
+  width: 9rem;
+  height: 200px;
+}
+.setting .changePhoneNumber a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.setting .changePhoneNumber a img {
+  width: 28px;
+  height: 48px;
+}
+.setting .changeloginPassword {
+  height: 190px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.setting .changeloginPassword a {
+  width: 9rem;
+  height: 200px;
+}
+.setting .changeloginPassword a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.setting .changeloginPassword a img {
+  width: 28px;
+  height: 48px;
+}
+.setting .commonProblems {
+  height: 190px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.setting .commonProblems a {
+  width: 9rem;
+  height: 200px;
+}
+.setting .commonProblems a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.setting .commonProblems a img {
+  width: 28px;
+  height: 48px;
+}
+.setting .feedback {
+  height: 190px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.setting .feedback a {
+  width: 9rem;
+  height: 200px;
+}
+.setting .feedback a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.setting .feedback a img {
+  width: 28px;
+  height: 48px;
+}
+.setting .aboutUs {
+  height: 190px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.setting .aboutUs a {
+  width: 9rem;
+  height: 200px;
+}
+.setting .aboutUs a p {
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.setting .aboutUs a img {
+  width: 28px;
+  height: 48px;
+}
+.setting .customerServicHotline {
+  height: 190px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.setting .customerServicHotline p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.setting .logout {
+  width: 9rem;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.setting .logout p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.changePhoneNumber2 {
+  width: 9rem;
+  margin-top: 140px;
+  margin-bottom: 300px;
+}
+.changePhoneNumber2 .title {
+  width: 9rem;
+}
+.changePhoneNumber2 .title p {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #484848;
+}
+.changePhoneNumber2 .originPhone {
+  margin-top: 120px;
+}
+.changePhoneNumber2 .originPhone p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.changePhoneNumber2 .originPhone input {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+  border: none;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 10px;
+  width: 9rem;
+  height: 190px;
+}
+.changePhoneNumber2 .changeOriginPhone {
+  margin-top: 120px;
+}
+.changePhoneNumber2 .changeOriginPhone p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.changePhoneNumber2 .changeOriginPhone input {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+  border: none;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 10px;
+  width: 9rem;
+  height: 190px;
+}
+.changePhoneNumber2 .phoneCode {
+  margin-top: 120px;
+  width: 9rem;
+}
+.changePhoneNumber2 .phoneCode .oo {
+  width: 9rem;
+}
+.changePhoneNumber2 .phoneCode p {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+}
+.changePhoneNumber2 .phoneCode a {
+  width: 3rem;
+  height: 100px;
+  border-radius: 100px;
+  background: #ff4f4f;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.changePhoneNumber2 .phoneCode input {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+  border: none;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 10px;
+  width: 9rem;
+  height: 190px;
+}
+.changePhoneNumber2 .submit {
+  width: 9rem;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.changePhoneNumber2 .submit p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.feedback2 {
+  width: 9rem;
+  margin-top: 140px;
+  margin-bottom: 300px;
+}
+.feedback2 .title {
+  width: 9rem;
+}
+.feedback2 .title p {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #484848;
+}
+.feedback2 .title a {
+  width: 280px;
+  height: 90px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  background: #005e69;
+}
+.feedback2 .reply {
+  margin-bottom: 1100px;
+}
+.feedback2 .reply .replyItem {
+  margin-top: 150px;
+  width: 10rem;
+  height: 346px;
+  background: #e7e7e7;
+}
+.feedback2 .reply .replyItem .replyItem-inside {
+  margin-left: 0.5rem;
+  width: 9rem;
+  height: 346px;
+  margin-top: 50px;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-icon {
+  width: 165px;
+  height: 165px;
+  border-radius: 200px;
+  overflow: hidden;
+  background: #005e69;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-icon .message-head {
+  width: 88px;
+  height: 79px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -240px -320px;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-txt {
+  width: 900px;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-txt .txt-formTime {
+  width: 900px;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-txt .txt-formTime p {
+  font-family: "mainFont";
+  line-height: 80px;
+  font-size: 45px;
+  color: #484848;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-txt .txt-formTime p:nth-child(2) {
+  line-height: 80px;
+  text-align: left;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #898989;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-txt .txt-content {
+  width: 900px;
+}
+.feedback2 .reply .replyItem .replyItem-inside .replyItem-txt .txt-content p {
+  line-height: 80px;
+  text-align: left;
+  font-family: "mainFont";
+  font-size: 45px;
+  color: #898989;
+}
+.messageAdd {
+  margin-top: 140px;
+  margin-bottom: 1100px;
+}
+.messageAdd .messageAdds {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  padding-bottom: 60px;
+}
+.messageAdd .messageAdds .messageAdds-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.messageAdd .messageAdds .messageAdds-btn {
+  margin-top: 40px;
+}
+.messageAdd .messageAdds .messageAdds-btn textarea {
+  width: 9rem;
+  border: none;
+}
+.messageAdd .submitMessage {
+  width: 9rem;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.messageAdd .submitMessage p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.maintenance-index {
+  width: 9rem;
+  margin-top: 100px;
+}
+.maintenance-index .maintenanceItem {
+  margin-right: 0.5rem;
+}
+.maintenance-index .maintenanceItem a {
+  position: relative;
+  width: 234px;
+  height: 234px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+.maintenance-index .maintenanceItem a p {
+  position: absolute;
+  top: -50px;
+  right: -15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 90px;
+  background: #e32a2a;
+  border: 2px solid #fff;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.maintenance-index .maintenanceItem a .cleanOrders-icon {
+  width: 78px;
+  height: 120px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -1200px 10px;
+}
+.maintenance-index .maintenanceItem a .setting-icon {
+  width: 90px;
+  height: 105px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -1300px 10px;
+}
+.maintenance-index .maintenanceItem a .meterReading-icon {
+  width: 80px;
+  height: 100px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -1400px 10px;
+}
+.maintenance-index .maintenanceItem a .roomCheck-icon {
+  width: 82px;
+  height: 100px;
+  background-image: url("../../static/img/rent-icons.png");
+  background-repeat: no-repeat;
+  background-size: 2480px 3508px;
+  background-position: -1500px 10px;
+}
+.maintenance-index .maintenanceItem p {
+  margin-top: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 40px;
+}
+.maintenance-cleanerOrder {
+  margin-bottom: 600px;
+}
+.maintenance-cleanerOrder .title {
+  margin: 120px 0;
+  width: 9rem;
+}
+.maintenance-cleanerOrder .title p {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #00747d;
+}
+.maintenance-cleanerOrder .orderLists .listItem0 {
+  margin-top: 40px;
+}
+.maintenance-cleanerOrder .orderLists .listItem0 .redPoint {
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
+  background: #e32a2a;
+  margin-right: 0.5em;
+}
+.maintenance-cleanerOrder .orderLists .listItem0 .hidePoint {
+  opacity: 0;
+}
+.maintenance-cleanerOrder .orderLists .listItem0 .itemContent {
+  width: 9rem;
+  height: 120px;
+  border-radius: 80px;
+  background: radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -o-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -ms-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -moz-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -webkit-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+}
+.maintenance-cleanerOrder .orderLists .listItem0 .itemContent p {
+  font-family: "mainFont";
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.maintenance-cleanerOrder .orderLists .listItem0 .itemContent p:nth-child(1) {
+  margin-left: 0.2rem;
+}
+.maintenance-cleanerOrder .orderLists .listItem0 .itemContent a {
+  letter-spacing: 2px;
+  font-family: "mainFont";
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  width: 220px;
+  height: 85px;
+  background: #16c59e;
+  border-radius: 60px;
+}
+.maintenance-cleanerOrder .orderLists .listItem1 .itemContent {
+  background: #d56230;
+}
+.maintenance-cleanerOrder .orderLists .listItem1 .itemContent a {
+  background: #f39800;
+}
+.maintenance-cleanerOrder .orderLists .listItem2 .itemContent {
+  background: #7e7e7e;
+}
+.maintenance-cleanerOrder .orderLists .listItem2 .itemContent a {
+  background: #bfbfbf;
+}
+.oddServerItems {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.oddServerItems .items {
+  background: #fff;
+  width: 1190px;
+  height: 1500px;
+}
+.oddServerItems .items .title {
+  margin-left: 0.3rem;
+  padding-top: 110px;
+  width: 9rem;
+  padding-bottom: 60px;
+  border-bottom: 5px solid #16c59e;
+}
+.oddServerItems .items .title p {
+  font-family: "titleFont";
+  font-size: 75px;
+  color: #797979;
+}
+.oddServerItems .items .keywords {
+  margin-top: 40px;
+}
+.oddServerItems .items .keywords input {
+  font-family: "mainFont";
+  text-indent: 40px;
+  width: 9rem;
+  height: 90px;
+  border: 1px solid #bfbfbf;
+  border-radius: 0px;
+}
+.oddServerItems .items .severItemList {
+  font-family: "mainFont";
+  margin-left: 0.3rem;
+}
+.oddServerItems .items .severItemList .severItemDetails {
+  margin-top: 40px;
+  margin-right: 0.36rem;
+  border: 1px solid #bfbfbf;
+  border-radius: 0px;
+  width: 240px;
+  line-height: 90px;
+  height: 90px;
+  float: left;
+  color: #bfbfbf;
+  font-size: 30px;
+}
+.oddServerItems .items .severItemList .severItemDetailsActive {
+  color: #fff;
+  background: #16c59e;
+}
+.oddServerItems .items .serverItemChoiceList {
+  margin-top: 70px;
+}
+.oddServerItems .items .serverItemChoiceList .serverItemChoiceList-title {
+  width: 9rem;
+}
+.oddServerItems .items .serverItemChoiceList .serverItemChoiceList-title p {
+  font-family: "titleFont";
+  color: #797979;
+  font-size: 30px;
+}
+.oddServerItems .items .serverItemChoiceList .serverItemChoiceListItems {
+  font-family: "mainFont";
+  margin-left: 0.3rem;
+}
+.oddServerItems .items .serverItemChoiceList .serverItemChoiceListItems .serverItemChoiceListItem {
+  margin-top: 40px;
+  margin-right: 0.36rem;
+  border: 1px solid #bfbfbf;
+  background: #16c59e;
+  color: #fff;
+  border-radius: 0px;
+  width: 240px;
+  line-height: 90px;
+  height: 90px;
+  float: left;
+}
+.oddServerItems .items .serverItemChoiceList .serverItemChoiceListItems .serverItemChoiceListItem p {
+  font-family: "mainFont";
+}
+.oddServerItems .items .serverItemChoiceList .serverItemChoiceListItems .serverItemChoiceListItem p span {
+  margin-left: 20px;
+  color: #fff;
+}
+.oddServerItems .items .otherFee {
+  margin-top: 70px;
+}
+.oddServerItems .items .otherFee .otherFee-title {
+  width: 9rem;
+}
+.oddServerItems .items .otherFee .otherFee-title p {
+  font-family: "titleFont";
+  color: #797979;
+  font-size: 33px;
+}
+.oddServerItems .items .otherFee .otherFee-input {
+  width: 9rem;
+  margin-top: 60px;
+}
+.oddServerItems .items .otherFee .otherFee-input .otherFeeTxt {
+  text-indent: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 0px;
+  line-height: 90px;
+  height: 90px;
+  width: 850px;
+}
+.oddServerItems .items .otherFee .otherFee-input .otherFeeMoney {
+  text-indent: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 0px;
+  line-height: 90px;
+  height: 90px;
+  width: 70px;
+}
+.oddServerItems .items .otherFee .otherFee-input .line {
+  display: inline-block;
+  margin: 3px;
+  width: 60px;
+  line-height: 2px;
+  height: 2px;
+  color: #797979;
+  background: #797979;
+}
+.oddServerItems .items .otherFee .otherFee-input .yuan {
+  font-size: 50px;
+  color: #bfbfbf;
+  font-family: "mainFont";
+}
+.oddServerItems .items .comfireBtn {
+  margin-left: 0.3rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  width: 9rem;
+  height: 114px;
+  line-height: 114px;
+  background: #16c59e;
+}
+.oddServerItems .items .comfireBtn p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #fff;
+}
+.hideorder {
+  display: none;
+}
+.maintenance-cleanerOrderDetails .title {
+  margin-top: 120px;
+  width: 9rem;
+}
+.maintenance-cleanerOrderDetails .title p:nth-child(1) {
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 95px;
+}
+.maintenance-cleanerOrderDetails .title p:nth-child(2) {
+  margin-top: 40px;
+  font-family: "mainFont";
+  color: #484848;
+  font-size: 53px;
+}
+.maintenance-cleanerOrderDetails .HouseNumber {
+  margin-top: 150px;
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.maintenance-cleanerOrderDetails .HouseNumber p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .cleanTime {
+  margin-top: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 60px;
+}
+.maintenance-cleanerOrderDetails .cleanTime .cleanTime-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .cleanTime .cleanTime-data p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .cleanTime .cleanTime-data p:nth-child(2) {
+  margin-left: 40px;
+}
+.maintenance-cleanerOrderDetails .orderTime {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.maintenance-cleanerOrderDetails .orderTime .orderTime-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .orderTime .orderTime-data p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .orderTime .orderTime-data p:nth-child(2) {
+  margin-left: 40px;
+}
+.maintenance-cleanerOrderDetails .cleanDescription {
+  border-bottom: 3px solid #ebebeb;
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.maintenance-cleanerOrderDetails .cleanDescription .cleanDescription-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .cleanDescription .cleanDescription-textarea {
+  width: 9rem;
+}
+.maintenance-cleanerOrderDetails .cleanDescription .cleanDescription-textarea textarea {
+  background: rgba(0, 0, 0, 0);
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+  border: none;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .serverItem {
+  width: 9rem;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .serverItem .serverItem-txt p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .serverItem .serverItem-btn .rr {
+  width: 29px;
+  height: 48px;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .serverItem .serverItem-btn .ll {
+  width: 48px;
+  height: 29px;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .txt-inside {
+  width: 9rem;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .txt-inside p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .addServer {
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+  margin-top: 50px;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .addServer p {
+  font-size: 40px;
+  font-family: "mainFont";
+  color: #ff4848;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .total {
+  margin-top: 30px;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .total p {
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 45px;
+}
+.maintenance-cleanerOrderDetails .serverItemOutside .item-txt .total p span {
+  font-family: "titleFont";
+  color: #484848;
+  font-size: 80px;
+}
+.maintenance-cleanerOrderDetails .smalltitle {
+  margin-top: 70px;
+  font-family: "mainFont";
+  color: #484848;
+  font-size: 53px;
+  margin-bottom: 70px;
+}
+.maintenance-cleanerOrderDetails .cleanImgs {
+  width: 9rem;
+}
+.maintenance-cleanerOrderDetails .cleanImgs img {
+  width: 330px;
+  height: 330px;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .cleanImg1 .picture {
+  width: 9rem;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .cleanImg1 .picture input {
+  position: relative;
+  left: -9999px;
+  opacity: 1;
+  border: none;
+  background: #ff9;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .ul {
+  width: 9rem;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .ul li {
+  position: relative;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .buttonGroup {
+  width: 9rem;
+  margin-bottom: 50px;
+}
+.maintenance-cleanerOrderDetails .cleanImgs .buttonGroup button {
+  width: 330px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  background: #00a699;
+}
+.maintenance-cleanerOrderDetails .submitComments {
+  width: 9rem;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.maintenance-cleanerOrderDetails .submitComments p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.cover {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 10rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cover .choice-outside {
+  margin-top: 400px;
+  width: 965px;
+  height: 856px;
+  border-radius: 60px;
+  background: radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -o-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -ms-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -moz-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -webkit-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+}
+.cover .choice-outside .title {
+  width: 850px;
+  margin-top: 60px;
+}
+.cover .choice-outside .title p {
+  font-family: "titleFont";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 65px;
+}
+.cover .choice-outside .choice-lists {
+  overflow: scroll;
+  width: 850px;
+  height: 560px;
+}
+.cover .choice-outside .choice-lists .choice-item {
+  margin-top: 30px;
+  font-family: "mainFont";
+  width: 850px;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cover .choice-outside .choice-lists .choice-item input {
+  border-radius: 100px;
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  border: 2px solid #fff;
+  margin-right: 0.5rem;
+}
+.cover .choice-outside .choice-lists .choice-item input:checked {
+  background: #00606b;
+  border: 2px solid #fff;
+}
+.cover .choice-outside .choice-lists .choice-item label p {
+  margin-left: 1rem;
+}
+.cover .choice-outside .choice-button {
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-family: "mainFont";
+  color: #fff;
+  letter-spacing: 1px;
+  width: 643px;
+  height: 100px;
+  border-radius: 50px;
+  background: #00606b;
+}
+.showC {
+  display: block;
+}
+.maintenance-monitorOrder {
+  margin-bottom: 600px;
+}
+.maintenance-monitorOrder .title {
+  margin: 120px 0;
+  width: 9rem;
+}
+.maintenance-monitorOrder .title p {
+  font-size: 95px;
+  font-family: "titleFont";
+  color: #00747d;
+}
+.maintenance-monitorOrder .orderLists .listItem0 {
+  margin-top: 40px;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .redPoint {
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
+  background: #e32a2a;
+  margin-right: 0.5em;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .hidePoint {
+  opacity: 0;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent {
+  width: 9rem;
+  height: 220px;
+  border-radius: 60px;
+  background: radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -o-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -ms-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -moz-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+  background: -webkit-radial-gradient(left top, circle cover, #0c707c 9%, #07a9b3 87%);
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentLeft .text-top {
+  width: 6.5rem;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentLeft .text-top p {
+  font-family: "mainFont";
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-right: 0.1rem;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentLeft .text-top p:nth-child(1) {
+  margin-left: 0.1rem;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentLeft .text-bottom {
+  width: 6.5rem;
+  margin-top: 35px;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentLeft .text-bottom p {
+  font-family: "mainFont";
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-left: 0.1rem;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentLeft .text-bottom p.active {
+  color: #1bfffc;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentRight a {
+  letter-spacing: 2px;
+  font-family: "mainFont";
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  width: 220px;
+  height: 85px;
+  border-radius: 60px;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentRight a:nth-child(2) {
+  margin-top: 15px;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentRight .distribution {
+  background: #16c59e;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentRight .distributed {
+  background: #b5b5b5;
+}
+.maintenance-monitorOrder .orderLists .listItem0 .itemContent .itemContentRight .remind {
+  background: #f39800;
+}
+.maintenance-monitorOrder .orderLists .listItem2 .itemContent {
+  background: #7e7e7e;
+}
+.maintenance-monitorOrder .orderLists .listItem2 .itemContent a {
+  background: #bfbfbf;
+}
+.maintenanceMRList {
+  font-family: "mainFont";
+}
+.maintenanceMRList .maintenanceMRList-top {
+  margin-top: 70px;
+}
+.maintenanceMRList .maintenanceMRList-top select {
+  font-family: "mainFont";
+  position: relative;
+  width: 540px;
+  height: 100px;
+  border-radius: 60px;
+  border: 2px solid #fff;
+  color: #c8c8c8;
+  font-size: 55px;
+  text-indent: 40px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.maintenanceMRList .maintenanceMRList-top select option {
+  width: 540px;
+}
+.maintenanceMRList .maintenanceMRList-top select:nth-child(2) {
+  margin-left: 20px;
+}
+.maintenanceMRList .maintenanceMRList-body a:nth-child(1) {
+  margin-top: 40px;
+}
+.maintenanceMRList .maintenanceMRList-body a {
+  margin-top: 20px;
+  width: 1090px;
+  height: 100px;
+  border-radius: 60px;
+  font-size: 55px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: "mainFont";
+}
+.maintenanceMRList .maintenanceMRList-body a.had {
+  color: #afafaf;
+  border: 2px solid #afafaf;
+}
+.maintenanceMRList .maintenanceMRList-body p:nth-child(1) {
+  margin-left: 40px;
+}
+.maintenanceMRList .maintenanceMRList-body p:nth-child(2) {
+  margin-right: 40px;
+}
+.maintenanceMRListDetails {
+  height: 100%;
+}
+.maintenanceMRListDetails .title {
+  width: 9rem;
+  margin-top: 130px;
+  font-family: "titleFont";
+  font-size: 95px;
+  color: #fff;
+}
+.maintenanceMRListDetails .elec {
+  position: relative;
+}
+.maintenanceMRListDetails .elec .serverItem {
+  width: 9rem;
+  margin-top: 60px;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-txt p {
+  font-family: "titleFont";
+  font-size: 95px;
+  color: #fff;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .rr {
+  width: 29px;
+  height: 48px;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .ll {
+  width: 48px;
+  height: 29px;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content {
+  position: absolute;
+  margin-top: 420px;
+  width: 9rem;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content .line {
+  margin-top: 50px;
+  font-family: "mainFont";
+  font-size: 54px;
+  width: 9rem;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content .line p {
+  color: #fff;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content .line input {
+  width: 1.5rem;
+  border-radius: 0;
+  border: none;
+  text-indent: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid #fff;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content div:nth-last-child(2) {
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content .total {
+  margin-top: 50px;
+  width: 9rem;
+}
+.maintenanceMRListDetails .elec .serverItem .serverItem-btn .content .total p {
+  font-family: "titleFont";
+  color: #fff;
+  font-size: 54px;
+}
+.maintenanceMRListDetails .water {
+  position: relative;
+}
+.maintenanceMRListDetails .water .serverItem {
+  width: 9rem;
+  margin-top: 60px;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-txt p {
+  font-family: "titleFont";
+  font-size: 95px;
+  color: #fff;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .rr {
+  width: 29px;
+  height: 48px;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .ll {
+  width: 48px;
+  height: 29px;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content {
+  position: absolute;
+  margin-top: 420px;
+  width: 9rem;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content .line {
+  margin-top: 50px;
+  font-family: "mainFont";
+  font-size: 54px;
+  width: 9rem;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content .line p {
+  color: #fff;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content .line input {
+  width: 1.5rem;
+  border-radius: 0;
+  border: none;
+  text-indent: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid #fff;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content div:nth-last-child(2) {
+  padding-bottom: 60px;
+  width: 9rem;
+  border-bottom: 3px solid #ebebeb;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content .total {
+  margin-top: 50px;
+  width: 9rem;
+}
+.maintenanceMRListDetails .water .serverItem .serverItem-btn .content .total p {
+  font-family: "titleFont";
+  color: #fff;
+  font-size: 54px;
+}
+.maintenanceMRListDetails .submitClean {
+  width: 9rem;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  height: 155px;
+  background: #ff4f4f;
+}
+.maintenanceMRListDetails .submitClean p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "mainFont";
+  font-size: 50px;
+}
+.maintenanceMRListDetails .height {
+  margin-top: 800px;
+}
+.completeRentInformation p {
+  font-size: 50px;
+  font-family: "mainFont";
+  color: #484848;
+}
+.completeRentInformation .name {
+  margin-top: 100px;
+}
+.completeRentInformation .name input {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 10px;
+  width: 9rem;
+  height: 150px;
+}
+.completeRentInformation .idcard {
+  margin-top: 50px;
+}
+.completeRentInformation .idcard input {
+  font-family: "mainFont";
+  font-size: 50px;
+  color: #484848;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 10px;
+  width: 9rem;
+  height: 150px;
+}
